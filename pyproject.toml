@@ -1,0 +1,49 @@
+[tool.poetry]
+name = "msd-code"
+version = "0.1.0"
+description = "This project serves as backend and API of MySillyDreams"
+authors = ["Sai krishna <saaiiikrishna@gmail.com>"]
+license = "MSD - LICENSE"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^4.2.6"
+djangorestframework = "^3.14.0"
+psycopg2 = "^2.9.9"
+django-filter = "^23.3"
+django-split-settings = "^1.2.0"
+pyyaml = "^6.0.1"
+boto3 = "^1.28.71"
+django-cors-headers = "^4.3.0"
+django-model-utils = "^4.3.1"
+django-storages = "^1.14.2"
+pydantic = "^2.4.2"
+pynacl = "^1.5.0"
+whitenoise = "^6.6.0"
+djangorestframework-simplejwt = "^5.3.0"
+djoser = "^2.2.0"
+python-dotenv = "^1.0.0"
+pillow = "^10.1.0"
+django-ses = "^3.5.0"
+gunicorn = "^21.2.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.5.0"
+colorlog = "^6.7.0"
+
+[tool.isort]
+multi_line_output = 5
+line_length = 119
+
+[tool.yapf]
+based_on_style = "google"
+align_closing_bracket_with_visual_indent = true
+coalesce_brackets = true
+column_limit = 119
+dedent_closing_brackets = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
